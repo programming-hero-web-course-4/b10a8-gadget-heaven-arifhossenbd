@@ -1,0 +1,202 @@
+[
+  {
+    "id": "SP01",
+    "title": "iPhone 16 Pro",
+    "image": "https://i.ibb.co.com/16BZkVg/iphone-16-pro.webp",
+    "category": "Smartphones",
+    "price": 1399,
+    "description": "The most advanced iPhone with a new design and groundbreaking features.",
+    "specification": [
+      "6.7-inch Super Retina XDR display",
+      "A18 Pro chip",
+      "256GB storage",
+      "USB-C charging",
+      "50MP advanced camera system"
+    ],
+    "availability": true,
+    "rating": 4.9
+  },
+  {
+    "id": "SP02",
+    "title": "Samsung Galaxy S24 Ultra",
+    "image": "https://i.ibb.co.com/kmy28D0/Galaxy-S24-Ultra.jpg",
+    "category": "Smartphones",
+    "price": 1199,
+    "description": "Flagship smartphone with next-gen performance and cutting-edge camera technology.",
+    "specification": [
+      "6.8-inch AMOLED 2X display",
+      "Snapdragon 8 Gen 3",
+      "512GB storage",
+      "200MP quad-camera system",
+      "5000mAh battery"
+    ],
+    "availability": true,
+    "rating": 4.9
+  },
+  {
+    "id": "SP03",
+    "title": "Google Pixel 8 Pro",
+    "image": "https://i.ibb.co.com/ph6XjM2/Google-Pixel-8-Pro.webp",
+    "category": "Smartphones",
+    "price": 1099,
+    "description": "Google's AI-powered smartphone with the best-in-class photo editing tools.",
+    "specification": [
+      "6.7-inch LTPO OLED display",
+      "Google Tensor G3",
+      "128GB storage",
+      "Face Unlock",
+      "AI Magic Editor"
+    ],
+    "availability": true,
+    "rating": 4.7
+  },
+  {
+    "id": "SP04",
+    "title": "OnePlus 12",
+    "image": "https://i.ibb.co.com/DRZj2MB/One-Plus-11-Pro.jpg",
+    "category": "Smartphones",
+    "price": 899,
+    "description": "Affordable flagship phone with lightning-fast charging.",
+    "specification": [
+      "6.8-inch AMOLED display",
+      "Snapdragon 8 Gen 3",
+      "256GB storage",
+      "150W charging"
+    ],
+    "availability": true,
+    "rating": 4.7
+  },
+  {
+    "id": "SP05",
+    "title": "Xiaomi 13 Ultra",
+    "image": "https://i.ibb.co.com/MNk2gQ2/Xiaomi-13-Pro.jpg",
+    "category": "Smartphones",
+    "price": 999,
+    "description": "Flagship smartphone with Leica-tuned cameras for ultimate photography.",
+    "specification": [
+      "6.73-inch AMOLED display",
+      "Snapdragon 8 Gen 2",
+      "512GB storage",
+      "120W charging",
+      "50MP quad-camera system"
+    ],
+    "availability": true,
+    "rating": 4.8
+  },
+  {
+    "id": "SP06",
+    "title": "Sony Xperia 1 V",
+    "image": "https://i.ibb.co.com/6wZ4QBX/Sony-Xperia-1-V.jpg",
+    "category": "Smartphones",
+    "price": 1299,
+    "description": "Professional-grade smartphone with exceptional display and camera quality.",
+    "specification": [
+      "6.5-inch 4K OLED display",
+      "Snapdragon 8 Gen 2",
+      "256GB storage",
+      "CineAlta camera technology"
+    ],
+    "availability": true,
+    "rating": 4.8
+  },
+  {
+    "id": "LP01",
+    "title": "Apple MacBook Pro 16-inch",
+    "image": "https://i.ibb.co.com/cThmf54/Mac-Book-Pro-16-inch.jpg",
+    "category": "Laptops",
+    "price": 2499,
+    "description": "High-performance laptop designed for professionals.",
+    "specification": [
+      "14-Core CPU",
+      "20-Core GPU",
+      "24GB Unified Memory",
+      "512GB SSD Storage",
+      "16-core Neural Engine",
+      "16-inch Liquid Retina XDR display",
+      "Three Thunderbolt 5 ports, HDMI port, SDXC card slot, headphone jack, MagSafe 3 port",
+      "Magic Keyboard with Touch ID",
+      "140W USB-C Power Adapter"
+    ],
+    "availability": true,
+    "rating": 4.9
+  },
+  {
+    "id": "LP02",
+    "title": "Dell XPS 17",
+    "image": "https://i.ibb.co.com/C6z6CMR/notebook-xps-17.jpg",
+    "category": "Laptops",
+    "price": 2799,
+    "description": "Premium laptop with an immersive 4K display and top-tier performance.",
+    "specification": [
+      "17-inch UHD+ InfinityEdge display",
+      "13th Gen Intel Core i9",
+      "1TB SSD",
+      "64GB RAM",
+      "NVIDIA GeForce RTX 4070"
+    ],
+    "availability": true,
+    "rating": 4.8
+  },
+  {
+    "id": "LP03",
+    "title": "Asus ROG Zephyrus G16",
+    "image": "https://i.ibb.co.com/TTZVgX5/Asus-ROG-Zephyrus-16.jpg",
+    "category": "Laptops",
+    "price": 2299,
+    "description": "Gaming laptop with next-gen performance and stunning visuals.",
+    "specification": [
+      "16-inch QHD+ display",
+      "Intel Core i9-13980HX",
+      "1TB SSD",
+      "16GB RAM",
+      "NVIDIA RTX 4080"
+    ],
+    "availability": true,
+    "rating": 4.8
+  },
+  {
+    "id": "AC01",
+    "title": "Sony WH-1000XM5",
+    "image": "https://i.ibb.co.com/h7N13x3/Sony-WH-1000-XM5.webp",
+    "category": "Accessories",
+    "price": 399,
+    "description": "Premium noise-canceling headphones with exceptional audio quality.",
+    "specification": [
+      "Bluetooth 5.3",
+      "30-hour battery life",
+      "Adaptive noise canceling"
+    ],
+    "availability": true,
+    "rating": 4.9
+  },
+  {
+    "id": "AC02",
+    "title": "Logitech MX Keys S",
+    "image": "https://i.ibb.co.com/17y0nfM/logi-mx-keys-s.webp",
+    "category": "Accessories",
+    "price": 119,
+    "description": "Advanced wireless keyboard for effortless typing and multitasking.",
+    "specification": [
+      "Illuminated keys",
+      "Multi-device support",
+      "USB-C rechargeable"
+    ],
+    "availability": true,
+    "rating": 4.8
+  },
+  {
+    "id": "AC03",
+    "title": "Anker 737 Power Bank",
+    "image": "https://i.ibb.co.com/cwVTtT1/Anker-737-Power-Bank.jpg",
+    "category": "Accessories",
+    "price": 129,
+    "description": "High-capacity power bank with fast charging for multiple devices.",
+    "specification": [
+      "24,000mAh capacity",
+      "65W output",
+      "3 USB ports"
+    ],
+    "availability": true,
+    "rating": 4.7
+  }
+]
