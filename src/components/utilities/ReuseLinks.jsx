@@ -1,13 +1,13 @@
 import { useTransition } from "react";
 import { NavLink } from "react-router";
-import useLinksStyle from "./useLinksStyle";
+import ReuseLinkStyle from "./ReuseLinkStyle";
 
-export default function useLinks( textStyle ) {
+export default function ReuseLinks(textStyle) {
     const transition = useTransition();
-    const linksStyle = useLinksStyle();
-    const links = [{ path: '/', label: 'Home' }, { path: '/statistics', label: 'Statistics' }, { path: '/dashboard', label: 'Dashboard' }]
+    const linksStyle = ReuseLinkStyle();
+    const links = [{ path: '/', label: 'Home' }, { path: '/statistics', label: 'Statistics' }, { path: '/dashboard', label: 'Dashboard' }, { path: '/contact', label: 'Contact' }]
     const link = links.map((link, idx) => (
-        <li className="list-none" key={idx}>
+        <li className={`list-none ${transition}`} key={idx}>
             <NavLink to={link?.path}
                 className={({ isActive }) =>
                     `${isActive ? `text-violet-800 border-b-2 border-violet-800` : `${linksStyle}`} ${textStyle} text-sm font-semibold ${transition}`
@@ -17,5 +17,5 @@ export default function useLinks( textStyle ) {
             </NavLink>
         </li>
     ));
-  return link
+    return link
 }

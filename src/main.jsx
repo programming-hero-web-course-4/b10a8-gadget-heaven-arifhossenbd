@@ -5,30 +5,47 @@ import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 import Root from './components/Root/Root'
 import Home from './components/Home/Home'
 import Dashboard from './components/Dashboard/Dashboard'
-import Statistic from './components/Statistic/Statistic'
-import Wishlist from './components/Wishlist/Wishlist'
-import Cart from './components/Cart/Cart'
+import Statistics from './components/Statistics/Statistics'
+import Wishlist from './components/Wishlists/Wishlists'
+import Cart from './components/Carts/Carts'
+import ErrorPage from './components/ErrorPage/ErrorPage'
+import Gadgets from './components/Gadgets/Gadgets'
+import GadgetDetails from './components/GadgetDetails/GadgetDetails'
+import { ToastContainer } from 'react-toastify'
+import Contact from './components/Contact/Contact'
+import { HelmetProvider } from 'react-helmet-async'
 
 const router = createBrowserRouter([
   {
     path: '/',
     element: <Root />,
-    errorElement: <h1>Something went wrong!</h1>,
+    errorElement: <ErrorPage />,
+    loader: () => fetch('/gadget.json'),
     children: [
       {
         path: '/',
-        element: <Home />
+        element: <Home />,
+        children: [
+          {
+            path: 'gadgets',
+            element: <Gadgets />
+          },
+        ]
+      },
+      {
+        path: 'gadget/:id',
+        element: <GadgetDetails />
       },
       {
         path: 'statistics',
-        element: <Statistic />
+        element: <Statistics />
       },
       {
         path: 'dashboard',
         element: <Dashboard />,
         children: [
           {
-            path: 'cart',
+            index: true,
             element: <Cart />
           },
           {
@@ -37,13 +54,22 @@ const router = createBrowserRouter([
           }
         ]
       },
+      {
+        path: 'contact',
+        element: <Contact />
+      }
     ],
   }
 ])
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    <RouterProvider router={router}>
-    </RouterProvider>
+    <HelmetProvider>
+      <RouterProvider router={router} />
+    </HelmetProvider>
+    <ToastContainer
+      position="top-center"
+      theme="light"
+    />
   </StrictMode>,
 )

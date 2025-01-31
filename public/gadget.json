@@ -1,5 +1,9 @@
 [
   {
+    "id": "SP00",
+    "category": "All Products"
+  },
+  {
     "id": "SP01",
     "title": "iPhone 16 Pro",
     "image": "https://i.ibb.co.com/16BZkVg/iphone-16-pro.webp",
@@ -96,7 +100,7 @@
       "256GB storage",
       "CineAlta camera technology"
     ],
-    "availability": true,
+    "availability": false,
     "rating": 4.8
   },
   {
@@ -198,5 +202,10 @@
     ],
     "availability": true,
     "rating": 4.7
+  },
+  {
+    "id": "WT01",
+    "category": "Wearable Technology"
+
   }
 ]
