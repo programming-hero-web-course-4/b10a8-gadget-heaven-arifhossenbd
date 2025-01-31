@@ -12,7 +12,7 @@ export default function Wishlists() {
   const wishlistItem = data?.filter(wishlist => storedList.includes(wishlist?.id));
   const transition = useTransition();
   return (
-    <div className={`px-2 md:w-11/12 lg:w-10/12 mx-auto ${transition}`}>
+    <div className={`px-4 md:px-0 md:w-11/12 lg:w-10/12 mx-auto ${transition}`}>
       <Helmet>
         <title>Wishlist | Gadget Heaven</title>
         <meta name="description" content="Explore your wishlist to see all your favorite gadgets." />

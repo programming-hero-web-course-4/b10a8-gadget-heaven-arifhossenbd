@@ -56,8 +56,8 @@ export default function GadgetDetails() {
                     <meta name="description" content="Explore the latest gadgets that will take your experience to the next level. From smart devices to the coolest accessories, we have it all!" />
                 </Helmet>
                 <Banner bannerTitle="Product Details" bannerDescription="Explore the latest gadgets that will take your experience to the next level. From smart devices to the coolest accessories, we have it all!" btn={null} btnContainer={null} bannerStyle={bannerStyle} />
-                <div className={`md:absolute top-64 left-0 right-0 z-50 px-4 md:w-11/12 lg:w-10/12 mx-auto ${transition} py-6 mb-4 md:py-0`}>
-                    <div className={`bg-gray-100 flex flex-col md:flex-row gap-2 lg:gap-5 flex-grow mt-4 md:mt-8 lg:mt-12 py-0 px-4 lg:px-12 rounded-2xl ${transition}`}>
+                <div className={`md:absolute top-64 left-0 right-0 z-50 px-4 md:px-0 md:w-11/12 lg:w-10/12 mx-auto ${transition} py-6 mb-4 md:py-0`}>
+                    <div className={`bg-gray-100 flex flex-col md:flex-row gap-2 lg:gap-5 flex-grow mt-4 md:mt-8 lg:mt-12 pt-2 md:pt-0 rounded-2xl ${transition}`}>
                         <figure className="md:h-96 w-full md:w-1/2 my-auto">
                             <img
                                 src={image}
@@ -101,12 +101,12 @@ export default function GadgetDetails() {
                             <div className={`flex flex-wrap items-center gap-2 md:gap-4 ${transition}`}>
                                 <button
                                     onClick={() => addToCart(id)}
-                                    disabled={!availability}
+                                    disabled={!availability || cartList?.includes(id)}
                                     className={`btn border-none font-bold rounded-full ${transition} bg-purple-600 hover:bg-gradient-to-r from-purple-800 via-purple-600 to-fuchsia-500 text-white`}
                                 >
                                     Add to Cart <i className="fa-solid fa-shopping-cart"></i>
                                 </button>
-                                <button onClick={() => addToWishlist(id)} disabled={!availability}
+                                <button onClick={() => addToWishlist(id)} disabled={!availability || wishlistList?.includes(id)}
                                     className={`btn border-none font-bold rounded-full h-12 w-12 ${transition} ${availability
                                         ? "bg-purple-600 hover:bg-gradient-to-r from-purple-800 via-purple-600 to-fuchsia-500 text-white"
                                         : "bg-gray-400 text-gray-300 cursor-not-allowed"

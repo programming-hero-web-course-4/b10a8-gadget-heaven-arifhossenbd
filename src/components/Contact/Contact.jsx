@@ -24,7 +24,7 @@ function Contact() {
     };
 
     return (
-        <div className="px-2 max-w-2xl mx-auto py-6 md:py-12">
+        <div className="px-4 max-w-2xl mx-auto py-6 md:py-12">
             <Helmet>
                 <title>Contact | Gadget Heaven</title>
             </Helmet>

@@ -60,7 +60,7 @@ export default function Statistics() {
         bannerDescription="Explore your statistics to see all your recent transactions and orders."
         bannerStyle={bannerStyle}
       />
-      <div className="px-2 md:px-0 py-6 pt-4 pb-8 md:pb-12 space-y-6 md:w-9/12 lg:w-10/12 mx-auto">
+      <div className="px-4 md:px-0 py-6 pt-4 pb-8 md:pb-12 space-y-6 md:w-9/12 lg:w-10/12 mx-auto">
         <h1 className="text-xl md:text-2xl lg:text-3xl font-bold my-5 md:my-8">Statistics</h1>
         <div className="h-80 w-full">
           <ResponsiveContainer width="100%" height="100%">

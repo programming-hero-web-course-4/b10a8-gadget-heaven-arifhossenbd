@@ -13,9 +13,9 @@ export default function Home() {
     setCategory(newCategory);
   };
   return (
-    <div className={`px-2 md:px-0 md:w-11/12 mx-auto ${transition}`}>
+    <div className={`px-4 md:px-0 md:w-11/12 mx-auto ${transition}`}>
       <Banner bannerTitle="Upgrade Your Tech Accessorize with Gadget Heaven Accessories" bannerDescription="Explore the latest gadgets that will take your experience to the next level. From smart devices to the coolest accessories, we have it all!" btn={btn} />
-      <div className="flex flex-col md:flex-row gap-8">
+      <div className="flex flex-col md:flex-row gap-5">
         <Sidebar handleCategoryChange={handleCategoryChange} />
         <Outlet />
         <Gadgets category={category} handleCategoryChange={handleCategoryChange} />

@@ -16,7 +16,7 @@ export default function Gadget({ gadget }) {
                             alt={title}
                             className={`rounded-xl object-cover h-full w-full scale-90 hover:scale-110 lg:scale-100 hover:lg:scale-125 cursor-zoom-in ${transition} w-full`} />
                     </figure>
-                    <div className={`p-4 space-y-2 ${transition}`}>
+                    <div className={`space-y-2 px-4 pb-4 ${transition}`}>
                         <h2 className="card-title font-bold">{title}</h2>
                         <p>Price: ${price}</p>
                         <div>

@@ -6,7 +6,7 @@ export default function Banner({ bannerTitle, bannerDescription, btn = null, btn
   const transition = useTransition();
   const presentRoute = useLocation();
   return (
-    <div className={`${presentRoute?.pathname === "/" && "pb-96 mb-32 md:mb-40 lg:mb-60"}`}>
+    <div className={`${presentRoute?.pathname === "/" && "pb-96 mb-40 md:mb-40 lg:mb-60"}`}>
       <div className={presentRoute?.pathname === "/" ? `absolute top-0 left-0 right-0 z-10 mt-2 px-2 md:px-0 md:w-11/12 mx-auto ${transition}` : transition}>
         <div className={presentRoute?.pathname === '/' ? `relative space-y-2 md:space-y-0 glass rounded-2xl ${transition}` : transition}>
           <div className={presentRoute?.pathname === '/' ? `border p-1 border-gray-300 rounded-xl md:rounded-2xl glass ${transition}` : transition}>

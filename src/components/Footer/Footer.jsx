@@ -9,7 +9,7 @@ export default function Footer() {
   const linksStyle = ReuseLinkStyle();
   const transition = useTransition()
   return (
-    <footer className={`bg-base-50 py-5 md:py-10 px-2 md:px-0 m-0 flex flex-col gap-3 md:gap-5 lg:gap-8 ${transition}`}>
+    <footer className={`bg-base-50 py-5 md:py-10 px-4 md:px-0 m-0 flex flex-col gap-3 md:gap-5 lg:gap-8 ${transition}`}>
       <div className={`flex flex-col justify-center items-center text-center space-y-2 md:space-y-4 ${transition}`}>
         <h1 className="text-2xl md:text-3xl lg:text-4xl font-semibold md:font-bold">Gadget Heaven</h1>
         <p>

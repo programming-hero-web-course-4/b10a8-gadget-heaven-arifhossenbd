@@ -22,14 +22,10 @@ export default function Carts() {
     setSortOrder((prev) => (prev === "asc" ? "desc" : "asc"));
   }
   const handlePurchase = () => {
-    if (cartItems?.length > 0) {
-      clearStoredList();
-      setSaveTotalCartPrice(totalPriceOfCart);
-      addToStatistic(cartId);
-      document.getElementById("modal_1").showModal();
-    } else {
-      document.getElementById("modal_2").showModal();
-    };
+    clearStoredList();
+    setSaveTotalCartPrice(totalPriceOfCart);
+    addToStatistic(cartId);
+    document.getElementById("modal_1").showModal();
   };
 
   const modalSuccessContent = (
@@ -42,30 +38,16 @@ export default function Carts() {
       <p>Thanks for purchasing.</p>
       <p>Have a great day!</p>
     </div>);
-  
-  const modalErrorContent = (
-    <div className="flex flex-col items-center justify-center space-y-4 flex-grow h-fit my-auto">
-      <h1 className="text-2xl font-bold">Your Cart is Empty</h1>
-      <span className="text-6xl">🛒</span>
-      <img
-        src="https://media.giphy.com/media/26AOFQFwt2pYFiqak/giphy.gif"
-        alt="Cart is empty animation"
-        className="w-fit h-56 rounded-xl"
-      />
-      <p>Start shopping now!</p>
-    </div>);
   const modalSuccessId = "modal_1";
   const modalSuccess = ReuseModal(modalSuccessId, modalSuccessContent);
-  const modalErrorId = "modal_2"
-  const modalError = ReuseModal(modalErrorId, modalErrorContent);
   return (
-    <div className={`px-2 md:w-11/12 lg:w-10/12 mx-auto ${transition}`}>
-      <div className={`flex justify-center md:justify-between items-center gap-5 md:gap-0 flex-wrap ${transition} mt-5`}>
+    <div className={`px-4 md:w-11/12 lg:w-10/12 mx-auto ${transition}`}>
+      <div className={`flex justify-center md:justify-between items-center gap-5 md:gap-0 flex-wrap ${transition} mt-2 md:mt-5`}>
         <h1 className="text-xl md:text-2xl lg:text-3xl font-bold space-y-5 ">Cart</h1>
         <div className={`flex items-center gap-3 md:gap-5 flex-wrap ${transition}`}>
           <h2 className="text-xl md:text-2xl lg:text-3xl font-bold">Total Cost: $<span>{totalPriceOfCart}</span></h2>
           <div className={`flex items-center gap-3 md:gap-5 flex-wrap ${transition}`}>
-            <button onClick={handleSortByPrice} className={`btn hover:text-white hover:bg-gradient-to-r from-purple-800 via-purple-600 to-fuchsia-500 font-bold rounded-full text-purple-700 border-2 hover:border-purple-600 border-purple-500 ${transition}`
+            <button disabled={cartItems?.length < 2} onClick={handleSortByPrice} className={`btn hover:text-white hover:bg-gradient-to-r from-purple-800 via-purple-600 to-fuchsia-500 font-bold rounded-full text-purple-700 border-2 hover:border-purple-600 border-purple-500 ${transition}`
             }> Sort By Price <i className="fa-solid fa-sliders rotate-90"></i></button>
             <button disabled={!cartItems?.length} onClick={handlePurchase} className={`btn text-white bg-purple-600 hover:bg-gradient-to-r from-purple-800 via-purple-600 to-fuchsia-500 font-bold rounded-full border-2 hover:border-purple-600 border-purple-500 ${transition}`
             }>Purchase</button>
@@ -84,7 +66,6 @@ export default function Carts() {
       </div>
       <div>
         {modalSuccess}
-        {modalError}
       </div>
     </div>
   )

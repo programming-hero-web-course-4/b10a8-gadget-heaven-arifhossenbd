@@ -6,7 +6,7 @@ export default function ErrorPage() {
     const error = useRouteError();
     const transition = useTransition();
     return (
-        <div className="flex flex-col justify-center items-center h-screen gap-1 md:gap-2">
+        <div className="flex flex-col justify-center items-center h-screen gap-2 md:gap-4 px-4 md:px-0">
             <Helmet>
                 <title>Error | Gadget Heaven</title>
                 <meta name="description" content="An error occurred on Gadget Heaven. Please try again later or contact support if the issue persists." />

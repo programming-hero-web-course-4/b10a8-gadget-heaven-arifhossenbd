@@ -35,7 +35,7 @@ export default function Dashboard() {
         btnContainer={btnContainer}
         bannerStyle={bannerStyle}
       />
-      <div className="py-4">
+      <div className="py-4 px-4 md:px-0">
         <Outlet />
       </div>
       <Helmet>
